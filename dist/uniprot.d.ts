@@ -1,1 +1,1 @@
-export default function (prot: string): Promise<any>;
+export default function validator(prot: string): Promise<any>;

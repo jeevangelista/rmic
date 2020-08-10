@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 import {strict as assert} from 'assert' // node env v 9 did not support "import assert..."
 
-export async function mapToUniPort(prot: string): Promise<any> {
+async function mapToUniPort(prot: string): Promise<any> {
   const url = `https://www.ebi.ac.uk/proteins/api/proteins?offset=0&protein=${prot}`
   const results = await (await fetch(url, 
     {
