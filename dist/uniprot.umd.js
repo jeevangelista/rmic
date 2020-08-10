@@ -5649,7 +5649,7 @@
 
 	const mapToUniPort = function (prot) {
 	  try {
-	    const url = `https://www.ebi.ac.uk/proteins/api/proteins?offset=0&protein=${prot}`;
+	    const url = `https://www.ebi.ac.uk/proteins/api/proteins?limit=1&protein=${prot}`;
 	    return Promise.resolve(fetch(url, {
 	      method: 'GET',
 	      headers: {
