@@ -7,10 +7,7 @@
   "module": "dist/index.m.js",
   "source": "src/uniprot.ts",
   "scripts": {
-    "build:umd": "microbundle -i uniprot.ts -o dist/uniprot.umd.js --no-pkg-main -f umd",
-    "test:umd": "node test.js",
-    "build:tsc": "tsc uniprot.ts --outDir dist/",
-    "test:tsc": "node test.js"
+    "build": "microbundle build -i uniprot.ts -o dist/uniprot.umd.js --no-pkg-main --target node -f umd"
   },
   "author": "John Erol Evangelista <JohnErol.Evangelista@mssm.edu>",
   "license": "Apache-2.0",
