@@ -2,8 +2,14 @@
 
 ```
 npm i
-# Compile to js
-microbundle -i uniprot.ts -o dist/uniprot.umd.js --no-pkg-main -f umd
-# test
-node dist/uniprot.umd.js
+
+# Compile to js using tsc
+npm run build:tsc
+npm run test:tsc
+
+
+# Compile to js using umd
+npm run build:umd
+npm run test:umd
+
 ```
