@@ -20,7 +20,4 @@ export default async function validator(prot:string): Promise<any> {
   assert.notEqual(proteins.length, 0); 
   //if no entries found then input does not correspond to a protein in UniProt
   return prot
-}
-
-validator("OCT4").then(res=>{console.log(res)}).catch(err=>{throw err})
-  
+}  

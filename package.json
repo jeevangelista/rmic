@@ -8,9 +8,9 @@
   "source": "src/uniprot.ts",
   "scripts": {
     "build:umd": "microbundle -i uniprot.ts -o dist/uniprot.umd.js --no-pkg-main -f umd",
-    "test:umd": "node dist/uniprot.umd.js",
+    "test:umd": "node test.js",
     "build:tsc": "tsc uniprot.ts --outDir dist/",
-    "test:tsc": "node dist/uniprot.js"
+    "test:tsc": "node test.js"
   },
   "author": "John Erol Evangelista <JohnErol.Evangelista@mssm.edu>",
   "license": "Apache-2.0",
