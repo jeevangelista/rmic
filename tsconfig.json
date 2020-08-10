@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "lib": ["ES6"],
+        "module": "UMD",
+        "moduleResolution": "node"
+    }
+}
