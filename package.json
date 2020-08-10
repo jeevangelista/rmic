@@ -2,12 +2,14 @@
   "name": "uniprot-validator",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "dist/uniprot.js",
   "umd:main": "dist/foo.umd.js",
   "module": "dist/index.m.js",
   "source": "src/uniprot.ts",
   "scripts": {
-    "build": "microbundle build -i uniprot.ts -o dist/uniprot.umd.js --no-pkg-main --target node -f umd"
+    "build": "microbundle build -i uniprot.ts -o dist/uniprot.umd.js --no-pkg-main --target node -f umd",
+    "test": "node test.js"
   },
   "author": "John Erol Evangelista <JohnErol.Evangelista@mssm.edu>",
   "license": "Apache-2.0",
