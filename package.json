@@ -9,7 +9,6 @@
   "source": "src/uniprot.ts",
   "scripts": {
     "build": "microbundle build -i uniprot.ts -o dist/uniprot.umd.js --no-pkg-main --target node -f umd",
-    "test": "node test.js"
   },
   "author": "John Erol Evangelista <JohnErol.Evangelista@mssm.edu>",
   "license": "Apache-2.0",
