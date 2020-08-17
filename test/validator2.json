@@ -1,0 +1,49 @@
+{
+    "$id": "https://github.com/jeevangelista/sample_validator/test/blob/master/validator2.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [
+        {
+            "$ref": "/dcic/signature-commons-schema/v5/core/meta.json"
+        },
+        {
+            "$validator": "protein.js"
+        },
+        {
+            "$validator": "gene.js"
+        },
+        {
+            "properties": {
+                "Protein": {
+                    "type": "object",
+                    "description": "UniProt protein",
+                    "properties": {
+                        "Name": {
+                            "type": "string",
+                            "description": "Name"
+                        },
+                        "Accession": {
+                            "type": "string",
+                            "description": "Accession"
+                        }
+                    },
+                    "required": [
+                        "Name"
+                    ]
+                },
+                "Gene": {
+                    "type": "string",
+                    "description": "Gene"
+                },
+                "Taxon_ID": {
+                    "type": "string",
+                    "description": "Organism taxon id"
+                }
+            },
+            "required": [
+                "Protein",
+                "Gene"
+            ],
+            "type": "object"
+        }
+    ]
+}
