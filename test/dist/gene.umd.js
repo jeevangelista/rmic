@@ -4374,7 +4374,7 @@
     try {
       const gene = data["Gene"];
       const taxid = data["Taxon_ID"];
-      assert_1.strict.notEqual(gene, "STAT3"); //if no entries found then input does not correspond to a protein in UniProt
+      assert_1.strict.equal(gene, "STAT3"); //if no entries found then input does not correspond to a protein in UniProt
 
       return Promise.resolve(_extends({}, data, {
         "Gene": gene
