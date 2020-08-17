@@ -6,10 +6,10 @@
             "$ref": "/dcic/signature-commons-schema/v5/core/meta.json"
         },
         {
-            "$validator": "protein.js"
+            "$validator": "https://raw.githubusercontent.com/jeevangelista/sample_validator/master/test/dist/protein.umd.js"
         },
         {
-            "$validator": "gene.js"
+            "$validator": "https://raw.githubusercontent.com/jeevangelista/sample_validator/master/test/dist/gene.umd.js"
         },
         {
             "properties": {
