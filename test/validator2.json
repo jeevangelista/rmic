@@ -41,7 +41,8 @@
             },
             "required": [
                 "Protein",
-                "Gene"
+                "Gene",
+                "Taxon_ID"
             ],
             "type": "object"
         }
