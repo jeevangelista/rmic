@@ -21,12 +21,5 @@ export default async function validator(data:object): Promise<any> {
   let proteins = await mapToUniPort(protein);
   assert.notEqual(proteins.length, 0); 
   //if no entries found then input does not correspond to a protein in UniProt
-  return {
-      ...data,
-      "Protein": {
-        "Name": protein,
-        "Accession": "Acc123"
-      },
-      "Taxon_ID": taxid
-  }
+  return data
 }  
